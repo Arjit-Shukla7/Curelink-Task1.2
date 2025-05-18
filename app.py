@@ -35,14 +35,6 @@ logger.remove(0)
 logger.add(sys.stderr, level="DEBUG")
 
 
-
-class Prescription(TypedDict):
-    medication: str
-    dosage: str
-
-
-
-# Result types for each handler
 class IdentityVerificationResult(FlowResult):
     is_valid: bool
 
